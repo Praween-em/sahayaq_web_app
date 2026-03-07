@@ -1,26 +1,30 @@
 const About = () => {
   return (
     <div className="container section-padding">
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <h1 className="section-title">About Sahayaq</h1>
-        <div className="glass" style={{ padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-xl)', marginBottom: 'var(--spacing-xl)' }}>
-          <h2 style={{ marginBottom: 'var(--spacing-md)' }}>Our Mission</h2>
-          <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: 'var(--spacing-md)' }}>
-            Sahayaq is built with a vision to organize India's fragmented service sector. We aim to provide every consumer with easy access to verified professionals, while helping service providers grow their businesses through technology.
+      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <h1 className="section-title">Our Story</h1>
+          <p className="section-subtitle">Redefining service excellence for millions of Indians.</p>
+        </div>
+        
+        <div className="glass" style={{ padding: '3rem', borderRadius: 'var(--radius-xl)', marginBottom: '4rem', boxShadow: 'var(--shadow-premium)' }}>
+          <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1.5rem', color: 'var(--primary-color)' }}>Our Mission</h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '1.125rem', lineHeight: '1.8', marginBottom: '1.5rem' }}>
+            Sahayaq was born out of a simple yet powerful vision: to bring order, trust, and professional standards to India's vast and fragmented service sector.
           </p>
-          <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-            We believe in transparency, reliability, and empowerment. By bridging the gap between talent and need, we create a ecosystem where quality service is just a tap away.
+          <p style={{ color: 'var(--text-muted)', fontSize: '1.125rem', lineHeight: '1.8' }}>
+            We empower local professionals by giving them a digital platform to grow their business, while providing customers with a seamless, secure, and reliable way to get things done. At Ride Andhra Tech Solutions, we believe technology should work for everyone.
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--spacing-xl)' }}>
-          <div>
-            <h3 style={{ marginBottom: 'var(--spacing-sm)' }}>Quality First</h3>
-            <p style={{ color: 'var(--text-secondary)' }}>We prioritize quality in every interaction. Our verification process ensures that only the best professionals reach you.</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+          <div className="glass" style={{ padding: '2rem', borderRadius: 'var(--radius-lg)' }}>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>Integrity First</h3>
+            <p style={{ color: 'var(--text-muted)' }}>We maintain the highest standards of verification. Every provider is a partner we trust with our own homes.</p>
           </div>
-          <div>
-            <h3 style={{ marginBottom: 'var(--spacing-sm)' }}>Community Driven</h3>
-            <p style={{ color: 'var(--text-secondary)' }}>Sahayaq is more than just an app; it's a community of service seekers and providers working together.</p>
+          <div className="glass" style={{ padding: '2rem', borderRadius: 'var(--radius-lg)' }}>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>Innovation for All</h3>
+            <p style={{ color: 'var(--text-muted)' }}>Our platform is designed to be inclusive, easy to use, and accessible to everyone, regardless of technical expertise.</p>
           </div>
         </div>
       </div>

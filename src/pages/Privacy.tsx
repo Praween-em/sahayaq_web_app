@@ -1,35 +1,46 @@
 const Privacy = () => {
   return (
     <div className="container section-padding">
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <h1 className="section-title">Privacy Policy</h1>
-        <div className="glass" style={{ padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-xl)' }}>
-          <p style={{ marginBottom: 'var(--spacing-md)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>Last Updated: March 2025</p>
-          
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>1. Information Collection</h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--spacing-md)' }}>
-            We collect personal information such as name, phone number, and location to provide and improve our services.
-          </p>
+      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <h1 className="section-title">Privacy Policy</h1>
+          <p className="section-subtitle">Your trust is our most valuable asset.</p>
+        </div>
+        
+        <div className="glass" style={{ padding: '3rem', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-premium)' }}>
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>1. Information Collection</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+              We collect information necessary to provide and improve our services, including contact details, location data, and identity verification documents for professionals.
+            </p>
+          </section>
 
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>2. How We Use Data</h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--spacing-md)' }}>
-            The data we collect is used to connect service seekers with providers, verify identities, and facilitate communication.
-          </p>
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>2. Data Usage</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+              Your data is used to facilitate service bookings, enhance platform security, and provide personalized support. We never sell your personal information to third parties.
+            </p>
+          </section>
 
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>3. Data Security</h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--spacing-md)' }}>
-            We implement security measures to protect your information. Your contact details are only shared with a limited number of verified providers.
-          </p>
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>3. Data Security</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+              We employ industry-standard encryption and security protocols to protect your data from unauthorized access, alteration, or disclosure.
+            </p>
+          </section>
 
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>4. Third-Party Services</h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--spacing-md)' }}>
-            We may use third-party services for analytics and verification purposes. These services have their own privacy policies.
-          </p>
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>4. Your Rights</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+              You have the right to access, correct, or request the deletion of your personal data at any time through the application settings or by contacting our support team.
+            </p>
+          </section>
 
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>5. Your Rights</h3>
-          <p style={{ color: 'var(--text-secondary)' }}>
-            You have the right to access, correct, or delete your personal data. Contact us for any privacy-related requests.
-          </p>
+          <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '2rem', marginTop: '2rem' }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>
+              If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at help.rideandhra@gmail.com.
+            </p>
+          </div>
         </div>
       </div>
     </div>

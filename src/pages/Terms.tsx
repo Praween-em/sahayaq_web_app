@@ -1,35 +1,46 @@
 const Terms = () => {
   return (
     <div className="container section-padding">
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <h1 className="section-title">Terms & Conditions</h1>
-        <div className="glass" style={{ padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-xl)' }}>
-          <p style={{ marginBottom: 'var(--spacing-md)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>Last Updated: March 2025</p>
-          
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>1. Acceptance of Terms</h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--spacing-md)' }}>
-            By downloading or using the Sahayaq app or website, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app.
-          </p>
+      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+          <h1 className="section-title">Terms of Service</h1>
+          <p className="section-subtitle">Last Updated: March 2025</p>
+        </div>
+        
+        <div className="glass" style={{ padding: '3rem', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-premium)' }}>
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>1. Acceptance of Terms</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+              By accessing and using the Sahayaq application and website, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+            </p>
+          </section>
 
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>2. Use of Service</h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--spacing-md)' }}>
-            Sahayaq provides a platform where users can post service requirements and professionals can respond. We are not responsible for the actual services performed by the providers.
-          </p>
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>2. Description of Service</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+              Sahayaq is a platform that connects customers with independent service professionals. We provide the technology to facilitate these connections but do not directly provide the services ourselves.
+            </p>
+          </section>
 
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>3. User Obligations</h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--spacing-md)' }}>
-            Users must provide accurate information when posting requests or registering as providers. Misuse of the platform may lead to account suspension.
-          </p>
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>3. User Verification</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+              We implement rigorous verification processes, including Aadhaar Offline XML, for service providers. However, users are encouraged to exercise their own judgement when engaging with professionals.
+            </p>
+          </section>
 
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>4. Privacy</h3>
-          <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--spacing-md)' }}>
-            Your use of the service is also governed by our Privacy Policy. We collect and use data as described therein.
-          </p>
+          <section style={{ marginBottom: '2.5rem' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>4. Liability</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+              Ride Andhra Tech Solutions shall not be liable for any direct, indirect, or incidental damages resulting from the use or inability to use our platform or services.
+            </p>
+          </section>
 
-          <h3 style={{ marginTop: 'var(--spacing-lg)', marginBottom: 'var(--spacing-sm)' }}>5. Contact Us</h3>
-          <p style={{ color: 'var(--text-secondary)' }}>
-            If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at help.rideandhra@gmail.com.
-          </p>
+          <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '2rem', marginTop: '2rem' }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem' }}>
+              If you have any questions or suggestions about our Terms of Service, do not hesitate to contact us at help.rideandhra@gmail.com.
+            </p>
+          </div>
         </div>
       </div>
     </div>
