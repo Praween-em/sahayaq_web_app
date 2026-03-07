@@ -32,6 +32,7 @@ const Footer = () => {
             <h4 className="footer-title">Governance</h4>
             <Link to="/terms" className="footer-link">Terms of Service</Link>
             <Link to="/privacy" className="footer-link">Privacy Policy</Link>
+            <Link to="/delete-account" className="footer-link">Delete Account</Link>
             <Link to="#" className="footer-link">Cookie Policy</Link>
             <Link to="#" className="footer-link">Security</Link>
           </div>
