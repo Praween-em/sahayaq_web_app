@@ -1,4 +1,5 @@
 import { Download, CheckCircle2, Users, Briefcase, Star } from 'lucide-react';
+import SEO from '../components/SEO';
 
 // Category Images
 import electricianImg from '../assets/categories/electrician.png';
@@ -24,6 +25,10 @@ const categories = [
 const Home = () => {
   return (
     <div>
+      <SEO 
+        title="Sahayaq - Expert Home & Business Services" 
+        description="Connect with verified home and business service professionals in India. Sahayaq offers reliable electricians, plumbers, painters, and more with Aadhaar-verified pros."
+      />
       <section className="hero">
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', backgroundColor: 'var(--primary-light)', padding: '0.5rem 1.25rem', borderRadius: 'var(--radius-full)', color: 'var(--primary-dark)', fontWeight: 700, fontSize: '0.875rem', marginBottom: '2rem', boxShadow: 'var(--shadow-sm)' }}>

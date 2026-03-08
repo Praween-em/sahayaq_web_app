@@ -1,8 +1,13 @@
 import { Mail, Phone, MessageSquare, Clock } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   return (
     <div className="container section-padding">
+      <SEO 
+        title="Contact Us - Sahayaq Support" 
+        description="Get in touch with Sahayaq's dedicated support team for any inquiries or feedback via WhatsApp, Email, or Phone."
+      />
       <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
         <h1 className="section-title">Get in Touch</h1>
         <p className="section-subtitle">Our dedicated support team is here to assist you with any inquiries or feedback.</p>

@@ -1,6 +1,12 @@
+import SEO from '../components/SEO';
+
 const About = () => {
   return (
     <div className="container section-padding">
+      <SEO 
+        title="About Us - Sahayaq" 
+        description="Learn about Sahayaq's mission to redefine service excellence for millions of Indians and empower local professionals."
+      />
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h1 className="section-title">Our Story</h1>

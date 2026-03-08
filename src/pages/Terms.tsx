@@ -1,6 +1,12 @@
+import SEO from '../components/SEO';
+
 const Terms = () => {
   return (
     <div className="container section-padding">
+      <SEO 
+        title="Terms of Service - Sahayaq" 
+        description="Read Sahayaq's Terms of Service for using our platform to connect with service professionals."
+      />
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h1 className="section-title">Terms of Service</h1>

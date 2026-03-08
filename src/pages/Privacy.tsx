@@ -1,6 +1,12 @@
+import SEO from '../components/SEO';
+
 const Privacy = () => {
   return (
     <div className="container section-padding">
+      <SEO 
+        title="Privacy Policy - Sahayaq" 
+        description="Read Sahayaq's privacy policy to understand how we collect, use, and protect your personal information."
+      />
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h1 className="section-title">Privacy Policy</h1>

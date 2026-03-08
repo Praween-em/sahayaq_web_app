@@ -1,8 +1,13 @@
 import { Trash2, ShieldAlert, Clock, Mail } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const DeleteAccount = () => {
   return (
     <div className="container section-padding">
+      <SEO 
+        title="Delete Account - Sahayaq" 
+        description="Manage your Sahayaq account deletion request process securely."
+      />
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h1 className="section-title">Delete Account</h1>
