@@ -11,6 +11,16 @@ import cleaningImg from '../assets/categories/cleaning_hygiene.png';
 import photoImg from '../assets/categories/photographs.png';
 import chefImg from '../assets/categories/food_kitchen.png';
 
+// Decoration Images
+import deco2 from '../assets/decorations/Sayayaq2.png';
+import deco5 from '../assets/decorations/Sayayaq5.png';
+import deco6 from '../assets/decorations/Sayayaq6.png';
+import deco7 from '../assets/decorations/Sayayaq7.png';
+import deco8 from '../assets/decorations/Sayayaq8.png';
+import decoRemoveBg from '../assets/decorations/Sayayaq2-removebg-preview.png';
+
+const decorations = [deco2, deco5, deco6, deco7, deco8, decoRemoveBg];
+
 const categories = [
   { name: 'Electricians', img: electricianImg, color: '#FF9F43' },
   { name: 'Plumbers', img: plumberImg, color: '#0fbcf9' },
@@ -25,9 +35,9 @@ const categories = [
 const Home = () => {
   return (
     <div>
-      <SEO 
-        title="Sahayaq - Expert Home & Business Services" 
-        description="Connect with verified home and business service professionals in India. Sahayaq offers reliable electricians, plumbers, painters, and more with Aadhaar-verified pros."
+      <SEO
+        title="Sahayaq - Expert Home & Business Services"
+        description="Connect with verified home and business service professionals in India. Sahayaq offers reliable electricians, plumbers, painters, and more with Aadhaar-verified professionals."
       />
       <section className="hero">
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
@@ -40,9 +50,9 @@ const Home = () => {
             Experience a new era of home and business services. Sahayaq connects you with top-tier, verified professionals across 50+ categories with just a few taps.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="#" className="btn btn-primary">
+            <a href="https://play.google.com/store/apps/details?id=com.sahayaq" className="btn btn-primary">
               <Download size={20} />
-              Get Sahaya App
+              Get Sahayaq App
             </a>
             <a href="#" className="btn btn-secondary">
               <Briefcase size={20} />
@@ -58,7 +68,7 @@ const Home = () => {
         <div className="container">
           <h2 className="section-title">Popular Categories</h2>
           <p className="section-subtitle">Discover our wide range of professional services tailored for your unique needs.</p>
-          
+
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '2rem' }}>
             {categories.map((cat, idx) => (
               <div key={idx} className="category-card glass" style={{ padding: '1.5rem', borderRadius: 'var(--radius-lg)', display: 'flex', alignItems: 'center', gap: '1.25rem', boxShadow: 'var(--shadow-sm)' }}>
@@ -69,9 +79,27 @@ const Home = () => {
                   <h3 style={{ fontSize: '1.125rem', fontWeight: 700, marginBottom: '0.25rem' }}>{cat.name}</h3>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--primary-color)', fontSize: '0.8125rem', fontWeight: 600 }}>
                     <CheckCircle2 size={14} />
-                    <span>Verified Pros</span>
+                    <span>Verified Professionals</span>
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Decorations Marquee */}
+      <section className="decoration-section">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', backgroundColor: 'var(--primary-light)', padding: '0.5rem 1.25rem', borderRadius: 'var(--radius-full)', color: 'var(--primary-dark)', fontWeight: 700, fontSize: '0.875rem', marginBottom: '2rem', boxShadow: 'var(--shadow-sm)' }}>
+          <Star size={16} fill="var(--primary-dark)" />
+          <span>Our Services</span>
+          <Star size={16} fill="var(--primary-dark)" />
+        </div>
+        <div className="marquee">
+          <div className="marquee-content">
+            {[...decorations, ...decorations, ...decorations, ...decorations].map((img, idx) => (
+              <div key={idx} className="marquee-item">
+                <img src={img} alt={`Decoration ${idx}`} />
               </div>
             ))}
           </div>
@@ -90,7 +118,7 @@ const Home = () => {
                     <Users size={20} />
                   </div>
                   <div>
-                    <h4 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem' }}>Aadhaar Verified Professionals</h4>
+                    <h4 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem' }}> Verified Professionals</h4>
                     <p style={{ color: 'var(--text-muted)' }}>Security is our priority. Every pro on our platform undergoes a rigorous offline XML Aadhaar verification.</p>
                   </div>
                 </div>
@@ -108,9 +136,9 @@ const Home = () => {
             <div style={{ position: 'relative' }}>
               <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: '200px', height: '200px', background: 'var(--primary-light)', borderRadius: '50%', zIndex: 0, filter: 'blur(40px)' }}></div>
               <div className="glass" style={{ position: 'relative', zIndex: 1, padding: '2rem', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-premium)' }}>
-                 <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional Team" style={{ width: '100%', borderRadius: 'var(--radius-lg)', marginBottom: '1.5rem' }} />
-                 <p style={{ fontStyle: 'italic', color: 'var(--text-muted)' }}>"Sahayaq has transformed how we find reliable help. The verification process gives us complete peace of mind."</p>
-                 <div style={{ marginTop: '1rem', fontWeight: 700 }}>— Product Team, Ride Andhra</div>
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional Team" style={{ width: '100%', borderRadius: 'var(--radius-lg)', marginBottom: '1.5rem' }} />
+                <p style={{ fontStyle: 'italic', color: 'var(--text-muted)' }}>"Sahayaq has transformed how we find reliable help. The verification process gives us complete peace of mind."</p>
+                <div style={{ marginTop: '1rem', fontWeight: 700 }}>— Product Team, Ride Andhra</div>
               </div>
             </div>
           </div>
@@ -125,7 +153,9 @@ const Home = () => {
             Download the Sahayaq app and join the revolution in service delivery. Available now on Google Play Store.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style={{ height: '64px', cursor: 'pointer' }} />
+            <a href="https://play.google.com/store/apps/details?id=com.sahayaq">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style={{ height: '64px', cursor: 'pointer' }} />
+            </a>
           </div>
         </div>
       </section>

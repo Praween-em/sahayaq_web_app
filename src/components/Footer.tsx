@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MessageSquare, Instagram, Facebook, Twitter } from 'lucide-react';
 import logo from '../assets/logos/Sayayaq2.png';
+import PlayStoreModal from './PlayStoreModal';
 
 const Footer = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <footer className="footer">
       <div className="container">
@@ -26,6 +30,7 @@ const Footer = () => {
             <Link to="/" className="footer-link">Home</Link>
             <Link to="/about" className="footer-link">Our Story</Link>
             <Link to="/contact" className="footer-link">Support</Link>
+            <button onClick={() => setIsModalOpen(true)} className="footer-link" style={{ textAlign: 'left', width: '100%' }}>Download App</button>
             <Link to="#" className="footer-link">Partner with us</Link>
           </div>
           <div>
@@ -33,8 +38,17 @@ const Footer = () => {
             <Link to="/terms" className="footer-link">Terms of Service</Link>
             <Link to="/privacy" className="footer-link">Privacy Policy</Link>
             <Link to="/delete-account" className="footer-link">Delete Account</Link>
-            <Link to="#" className="footer-link">Cookie Policy</Link>
-            <Link to="#" className="footer-link">Security</Link>
+          </div>
+          <div>
+            <h4 className="footer-title">Local Services</h4>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Electricians in Anantapur</a>
+              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Plumbers in Anantapur</a>
+              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Electricians in Kurnool</a>
+              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Plumbers in Kurnool</a>
+              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Electricians in Kadapa</a>
+              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Plumbers in Kadapa</a>
+            </div>
           </div>
           <div>
             <h4 className="footer-title">Support</h4>
@@ -56,9 +70,13 @@ const Footer = () => {
         </div>
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '4rem', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: '#64748b', fontSize: '0.875rem' }}>
           <p>© 2025 Ride Andhra Tech Solutions. All rights reserved.</p>
+          <p onClick={() => setIsModalOpen(true)} style={{ color: 'var(--primary-color)', cursor: 'pointer', fontWeight: 600 }}>
+            Visit the Sahayaq App on Play Store for more services
+          </p>
           <p>Made with ❤️ in India</p>
         </div>
       </div>
+      <PlayStoreModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </footer>
   );
 };
