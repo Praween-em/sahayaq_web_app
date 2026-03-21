@@ -8,8 +8,9 @@ interface SEOProps {
   keywords?: string[];
 }
 
-export default function SEO({ title, description, name, type, keywords }: SEOProps) {
+export default function SEO({ title, description, name = "My Sahayaq", type = "website", keywords }: SEOProps) {
   const currentUrl = window.location.href;
+  const canonicalUrl = currentUrl.replace('sahayaq.in', 'mysahayaq.in'); // Canonical should point to the primary domain
 
   return (
     <Helmet>
@@ -17,12 +18,13 @@ export default function SEO({ title, description, name, type, keywords }: SEOPro
       <title>{title}</title>
       <meta name='description' content={description} />
       {keywords && <meta name="keywords" content={keywords.join(', ')} />}
+      <link rel="canonical" href={canonicalUrl} />
       
       {/* OpenGraph tags */}
-      <meta property="og:type" content={type || 'website'} />
+      <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      {name && <meta property="og:site_name" content={name} />}
+      <meta property="og:site_name" content={name} />
       <meta property="og:url" content={currentUrl} />
       
       {/* Twitter tags */}
@@ -30,7 +32,7 @@ export default function SEO({ title, description, name, type, keywords }: SEOPro
       <meta name="twitter:card" content={type === 'article' ? 'summary_large_image' : 'summary'} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      {name && <meta name="twitter:site" content={name} />}
+      <meta name="twitter:site" content={name} />
     </Helmet>
   );
 }
