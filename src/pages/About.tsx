@@ -4,8 +4,8 @@ const About = () => {
   return (
     <div className="container section-padding">
       <SEO 
-        title="About Us - Sahayaq" 
-        description="Learn about Sahayaq's mission to redefine service excellence for millions of Indians and empower local professionals."
+        title="About Us - My Sahayaq" 
+        description="Learn about My Sahayaq's mission to redefine service excellence for millions of Indians and empower local professionals."
       />
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
@@ -16,7 +16,7 @@ const About = () => {
         <div className="glass" style={{ padding: '3rem', borderRadius: 'var(--radius-xl)', marginBottom: '4rem', boxShadow: 'var(--shadow-premium)' }}>
           <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1.5rem', color: 'var(--primary-color)' }}>Our Mission</h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '1.125rem', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-            Sahayaq was born out of a simple yet powerful vision: to bring order, trust, and professional standards to India's vast and fragmented service sector.
+            My Sahayaq was born out of a simple yet powerful vision: to bring order, trust, and professional standards to India's vast and fragmented service sector.
           </p>
           <p style={{ color: 'var(--text-muted)', fontSize: '1.125rem', lineHeight: '1.8' }}>
             We empower local professionals by giving them a digital platform to grow their business, while providing customers with a seamless, secure, and reliable way to get things done. At Ride Andhra Tech Solutions, we believe technology should work for everyone.

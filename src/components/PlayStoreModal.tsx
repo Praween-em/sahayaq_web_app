@@ -31,7 +31,7 @@ const PlayStoreModal: React.FC<PlayStoreModalProps> = ({ isOpen, onClose }) => {
         </div>
         
         <h2 style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '1rem' }}>
-          Get the Sahayaq App
+          Get the My Sahayaq App
         </h2>
         
         <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>

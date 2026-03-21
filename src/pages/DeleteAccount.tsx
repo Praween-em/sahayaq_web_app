@@ -5,8 +5,8 @@ const DeleteAccount = () => {
   return (
     <div className="container section-padding">
       <SEO 
-        title="Delete Account - Sahayaq" 
-        description="Manage your Sahayaq account deletion request process securely."
+        title="Delete Account - My Sahayaq" 
+        description="Manage your My Sahayaq account deletion request process securely."
       />
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
@@ -23,7 +23,7 @@ const DeleteAccount = () => {
               <h2 style={{ fontSize: '1.75rem', fontWeight: 700, margin: 0, color: 'var(--primary-color)' }}>Request Process</h2>
             </div>
             <p style={{ color: 'var(--text-muted)', lineHeight: '1.7', fontSize: '1.1rem' }}>
-              To ensure the security of your data and prevent unauthorized deletions, account removal requests are handled manually by our security team. You can initiate this process directly from the **Profile Settings** within the Sahayaq App or by contacting our support team.
+              To ensure the security of your data and prevent unauthorized deletions, account removal requests are handled manually by our security team. You can initiate this process directly from the **Profile Settings** within the My Sahayaq App or by contacting our support team.
             </p>
           </section>
 

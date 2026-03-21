@@ -14,7 +14,7 @@ const Footer = () => {
           <div>
             <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)', marginBottom: '1.5rem' }}>
               <img src={logo} alt="Sahayaq Logo" style={{ height: '40px', objectFit: 'contain', filter: 'brightness(0) invert(1)' }} />
-              <span style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--white)', fontFamily: 'var(--font-heading)' }}>Sahayaq</span>
+              <span style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--white)', fontFamily: 'var(--font-heading)' }}>My Sahayaq</span>
             </Link>
             <p style={{ color: '#94a3b8', fontSize: '0.9375rem', lineHeight: '1.7', marginBottom: '2rem' }}>
               Empowering India's service sector by connecting verified professionals with customers through cutting-edge technology and trust.
@@ -71,7 +71,7 @@ const Footer = () => {
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '4rem', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: '#64748b', fontSize: '0.875rem' }}>
           <p>© 2025 Ride Andhra Tech Solutions. All rights reserved.</p>
           <p onClick={() => setIsModalOpen(true)} style={{ color: 'var(--primary-color)', cursor: 'pointer', fontWeight: 600 }}>
-            Visit the Sahayaq App on Play Store for more services
+            Visit the My Sahayaq App on Play Store for more services
           </p>
           <p>Made with ❤️ in India</p>
         </div>

@@ -1,23 +1,22 @@
 import SEO from '../components/SEO';
-import { Link } from 'react-router-dom';
 
 const Providers = () => {
   return (
     <div className="container section-padding">
       <SEO 
-        title="For Providers - Sahayaq" 
-        description="Join Sahayaq as a service provider. Grow your business and reach more customers with our platform."
+        title="My Sahayaq Providers" 
+        description="Join My Sahayaq as a service provider. Grow your business and reach more customers with our platform."
       />
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-          <h1 className="section-title">Partner with Sahayaq</h1>
+          <h1 className="section-title">My Sahayaq Providers</h1>
           <p className="section-subtitle">Grow your business with India's most trusted service platform.</p>
         </div>
         
         <div className="glass" style={{ padding: '3rem', borderRadius: 'var(--radius-xl)', marginBottom: '4rem', boxShadow: 'var(--shadow-premium)' }}>
           <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1.5rem', color: 'var(--primary-color)' }}>Why Join Us?</h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '1.125rem', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-            As a Sahayaq provider, you get direct access to thousands of customers looking for your expertise. We handle the marketing, scheduling, and payments, so you can focus on what you do best—delivering exceptional service.
+            As a My Sahayaq provider, you get direct access to thousands of customers looking for your expertise. We handle the marketing, scheduling, and payments, so you can focus on what you do best—delivering exceptional service.
           </p>
           
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '2.5rem' }}>
@@ -42,9 +41,9 @@ const Providers = () => {
 
         <div style={{ textAlign: 'center', marginTop: '3rem' }}>
           <h3 style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '1.5rem' }}>Ready to get started?</h3>
-          <Link to="/contact" style={{ display: 'inline-block', backgroundColor: 'var(--primary-color)', color: 'white', padding: '1rem 2.5rem', borderRadius: 'var(--radius-full)', fontWeight: 600, fontSize: '1.125rem', textDecoration: 'none', transition: 'all 0.3s ease' }}>
+          <a href="https://play.google.com/store/apps/details?id=com.servicesapp" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', backgroundColor: 'var(--primary-color)', color: 'white', padding: '1rem 2.5rem', borderRadius: 'var(--radius-full)', fontWeight: 600, fontSize: '1.125rem', textDecoration: 'none', transition: 'all 0.3s ease' }}>
             Apply Now
-          </Link>
+          </a>
         </div>
       </div>
     </div>

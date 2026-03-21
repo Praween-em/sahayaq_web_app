@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)' }}>
           <img src={logo} alt="Sahayaq Logo" style={{ height: '50px', objectFit: 'contain' }} />
-          <span style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-heading)' }}>Sahayaq</span>
+          <span style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-heading)' }}>My Sahayaq</span>
         </Link>
         <div className="nav-links">
           <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>Home</Link>

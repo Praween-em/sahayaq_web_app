@@ -4,8 +4,8 @@ const Terms = () => {
   return (
     <div className="container section-padding">
       <SEO 
-        title="Terms of Service - Sahayaq" 
-        description="Read Sahayaq's Terms of Service for using our platform to connect with service professionals."
+        title="Terms of Service - My Sahayaq" 
+        description="Read My Sahayaq's Terms of Service for using our platform to connect with service professionals."
       />
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
@@ -17,14 +17,14 @@ const Terms = () => {
           <section style={{ marginBottom: '2.5rem' }}>
             <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>1. Acceptance of Terms</h2>
             <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
-              By accessing and using the Sahayaq application and website, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+              By accessing and using the My Sahayaq application and website, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
             </p>
           </section>
 
           <section style={{ marginBottom: '2.5rem' }}>
             <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary-color)' }}>2. Description of Service</h2>
             <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
-              Sahayaq is a platform that connects customers with independent service professionals. We provide the technology to facilitate these connections but do not directly provide the services ourselves.
+              My Sahayaq is a platform that connects customers with independent service professionals. We provide the technology to facilitate these connections but do not directly provide the services ourselves.
             </p>
           </section>
 
