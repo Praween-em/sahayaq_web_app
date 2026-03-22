@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mysahayaq.in/sitemap.xml
+# Explicitly allow AI search engines and crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://sahayaq.in/sitemap.xml
