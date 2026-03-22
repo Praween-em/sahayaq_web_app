@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MessageSquare, Instagram, Facebook, Twitter } from 'lucide-react';
 import logo from '../assets/logos/Sayayaq2.png';
@@ -6,6 +6,23 @@ import PlayStoreModal from './PlayStoreModal';
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    // Open on first load after a short delay
+    const initialTimer = setTimeout(() => {
+      setIsModalOpen(true);
+    }, 2000);
+
+    // Open every 1 minute
+    const intervalTimer = setInterval(() => {
+      setIsModalOpen(true);
+    }, 60000);
+
+    return () => {
+      clearTimeout(initialTimer);
+      clearInterval(intervalTimer);
+    };
+  }, []);
 
   return (
     <footer className="footer">
