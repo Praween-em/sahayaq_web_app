@@ -37,7 +37,8 @@ const Home = () => {
     <div>
       <SEO
         title="My Sahayaq - Expert Home & Business Services"
-        description="Connect with verified home and business service professionals in India. My Sahayaq offers reliable electricians, plumbers, painters, and more with Aadhaar-verified professionals."
+        description="Connect with verified home and business service professionals in India. My Sahayaq (also known as Sahayak) offers reliable electricians, plumbers, painters, and more with Aadhaar-verified professionals."
+        keywords={['My Sahayaq', 'Sahayaq', 'Sahayak', 'Home Services', 'Expert Services']}
       />
       <section className="hero">
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
@@ -47,7 +48,7 @@ const Home = () => {
           </div>
           <h1 className="hero-title">Your Gateway to<br />Expert Services</h1>
           <p className="hero-subtitle">
-            Experience a new era of home and business services. My Sahayaq connects you with top-tier, verified professionals across 50+ categories with just a few taps.
+            Experience a new era of home and business services. My Sahayaq (Sahayak) connects you with top-tier, verified professionals across 50+ categories with just a few taps.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="https://play.google.com/store/apps/details?id=com.sahayaq" className="btn btn-primary">

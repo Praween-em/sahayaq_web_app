@@ -8,6 +8,7 @@ import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import DeleteAccount from './pages/DeleteAccount';
 import Providers from './pages/Providers';
+import Location from './pages/Location';
 import './index.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/delete-account" element={<DeleteAccount />} />
             <Route path="/providers" element={<Providers />} />
+            <Route path="/services/:city" element={<Location />} />
           </Routes>
         </main>
         <Footer />

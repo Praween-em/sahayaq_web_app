@@ -42,12 +42,14 @@ const Footer = () => {
           <div>
             <h4 className="footer-title">Local Services</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Electricians in Anantapur</a>
-              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Plumbers in Anantapur</a>
-              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Electricians in Kurnool</a>
-              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Plumbers in Kurnool</a>
-              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Electricians in Kadapa</a>
-              <a href="https://play.google.com/store/apps/details?id=com.sahayaq" target="_blank" rel="noopener noreferrer" className="footer-link" style={{ marginBottom: 0 }}>Plumbers in Kadapa</a>
+              <Link to="/services/anantapur" className="footer-link" style={{ marginBottom: 0 }}>Electricians in Anantapur</Link>
+              <Link to="/services/anantapur" className="footer-link" style={{ marginBottom: 0 }}>Plumbers in Anantapur</Link>
+              <Link to="/services/kurnool" className="footer-link" style={{ marginBottom: 0 }}>Electricians in Kurnool</Link>
+              <Link to="/services/kurnool" className="footer-link" style={{ marginBottom: 0 }}>Plumbers in Kurnool</Link>
+              <Link to="/services/kadapa" className="footer-link" style={{ marginBottom: 0 }}>Electricians in Kadapa</Link>
+              <Link to="/services/kadapa" className="footer-link" style={{ marginBottom: 0 }}>Plumbers in Kadapa</Link>
+              <Link to="/services/hyderabad" className="footer-link" style={{ marginBottom: 0 }}>Expert Services in Hyderabad</Link>
+              <Link to="/services/bangalore" className="footer-link" style={{ marginBottom: 0 }}>Home Services in Bangalore</Link>
             </div>
           </div>
           <div>

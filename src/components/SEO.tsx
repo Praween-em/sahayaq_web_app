@@ -17,7 +17,7 @@ export default function SEO({ title, description, name = "My Sahayaq", type = "w
       {/* Standard metadata tags */}
       <title>{title}</title>
       <meta name='description' content={description} />
-      {keywords && <meta name="keywords" content={keywords.join(', ')} />}
+      <meta name="keywords" content={[...(keywords || []), 'My Sahayaq', 'Sahayaq', 'Sahayak'].filter((v, i, a) => a.indexOf(v) === i).join(', ')} />
       <link rel="canonical" href={canonicalUrl} />
       
       {/* OpenGraph tags */}
