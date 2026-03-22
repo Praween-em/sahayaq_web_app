@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { X, Download } from 'lucide-react';
-import appLogo from '../assets/logos/app_logo_sahayaq.png';
+import appLogo from '../assets/logos/Sayayaq2.png';
 
 interface PlayStoreModalProps {
   isOpen: boolean;
