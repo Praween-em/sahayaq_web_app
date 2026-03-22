@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { X, Smartphone, Briefcase, Download } from 'lucide-react';
+import { X, Download } from 'lucide-react';
+import appLogo from '../assets/logos/app_logo_sahayaq.png';
 
 interface PlayStoreModalProps {
   isOpen: boolean;
@@ -29,9 +30,9 @@ const PlayStoreModal: React.FC<PlayStoreModalProps> = ({ isOpen, onClose }) => {
             <div style={{ 
               width: '80px', height: '80px', backgroundColor: 'var(--primary-light)', 
               borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', 
-              margin: '0 auto 1.5rem', color: 'var(--primary-color)'
+              margin: '0 auto 1.5rem', overflow: 'hidden'
             }}>
-              <Smartphone size={40} />
+              <img src={appLogo} alt="My Sahayaq App Logo" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
             </div>
             
             <h2 style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
@@ -59,9 +60,9 @@ const PlayStoreModal: React.FC<PlayStoreModalProps> = ({ isOpen, onClose }) => {
             <div style={{ 
               width: '80px', height: '80px', backgroundColor: '#e0f2fe', 
               borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', 
-              margin: '0 auto 1.5rem', color: '#0ea5e9'
+              margin: '0 auto 1.5rem', overflow: 'hidden'
             }}>
-              <Briefcase size={40} />
+              <img src={appLogo} alt="My Sahayaq Provider App Logo" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
             </div>
             
             <h2 style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
@@ -73,7 +74,7 @@ const PlayStoreModal: React.FC<PlayStoreModalProps> = ({ isOpen, onClose }) => {
             </p>
             
             <a 
-              href="https://play.google.com/store/apps/details?id=com.sahayaq.provider" 
+              href="https://play.google.com/store/apps/details?id=com.servicesapp" 
               className="btn btn-primary" 
               style={{ width: '100%', padding: '1rem', backgroundColor: '#0ea5e9', border: 'none', display: 'flex', justifyContent: 'center', gap: '0.5rem', alignItems: 'center' }}
               target="_blank"
