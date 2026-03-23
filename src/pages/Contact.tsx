@@ -13,7 +13,7 @@ const Contact = () => {
         <p className="section-subtitle">Our dedicated support team is here to assist you with any inquiries or feedback.</p>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', marginBottom: '5rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2.5rem', marginBottom: '5rem' }}>
         <div className="glass" style={{ padding: '2.5rem', borderRadius: 'var(--radius-xl)', textAlign: 'center', boxShadow: 'var(--shadow-premium)' }}>
           <div style={{ backgroundColor: '#25D36610', width: '70px', height: '70px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem' }}>
             <MessageSquare size={32} color="#25D366" />

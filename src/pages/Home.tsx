@@ -110,7 +110,7 @@ const Home = () => {
       {/* Trust Section */}
       <section className="section-padding" style={{ backgroundColor: '#f8fafc' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+          <div className="grid-responsive-2">
             <div>
               <h2 style={{ fontSize: '2.75rem', fontWeight: 800, marginBottom: '2rem', lineHeight: '1.2' }}>Why Businesses & Households Trust My Sahayaq</h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
@@ -148,7 +148,7 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="section-padding container">
-        <div className="glass" style={{ background: 'linear-gradient(135deg, #078c34 0%, #4461e5 100%)', padding: '5rem', borderRadius: 'var(--radius-2xl)', textAlign: 'center', color: 'var(--white)' }}>
+        <div className="glass padding-responsive-large" style={{ background: 'linear-gradient(135deg, #078c34 0%, #4461e5 100%)', borderRadius: 'var(--radius-2xl)', textAlign: 'center', color: 'var(--white)' }}>
           <h2 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1.5rem' }}>Experience the Difference Today</h2>
           <p style={{ fontSize: '1.25rem', opacity: 0.9, marginBottom: '3rem', maxWidth: '700px', margin: '0 auto 3rem' }}>
             Download the My Sahayaq app and join the revolution in service delivery. Available now on Google Play Store.

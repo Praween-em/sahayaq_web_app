@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '4rem', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: '#64748b', fontSize: '0.875rem' }}>
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '4rem', paddingTop: '2rem', display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'space-between', alignItems: 'center', color: '#64748b', fontSize: '0.875rem' }}>
           <p>© 2025 Ride Andhra Tech Solutions. All rights reserved.</p>
           <p onClick={() => setIsModalOpen(true)} style={{ color: 'var(--primary-color)', cursor: 'pointer', fontWeight: 600 }}>
             Visit the My Sahayaq App on Play Store for more services

@@ -102,7 +102,7 @@ const Location = () => {
             </p>
           </div>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2.5rem' }}>
             <div className="glass" style={{ padding: '2.5rem', borderRadius: 'var(--radius-xl)' }}>
               <div style={{ color: 'var(--primary-color)', marginBottom: '1.5rem' }}><Star size={32} fill="var(--primary-color)" /></div>
               <h4 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem' }}>Local Experts</h4>
@@ -119,7 +119,7 @@ const Location = () => {
 
       {/* CTA Section */}
       <section className="section-padding container">
-        <div className="glass" style={{ background: 'linear-gradient(135deg, #078c34 0%, #4461e5 100%)', padding: '5rem', borderRadius: 'var(--radius-2xl)', textAlign: 'center', color: 'var(--white)' }}>
+        <div className="glass padding-responsive-large" style={{ background: 'linear-gradient(135deg, #078c34 0%, #4461e5 100%)', borderRadius: 'var(--radius-2xl)', textAlign: 'center', color: 'var(--white)' }}>
           <h2 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1.5rem' }}>Get Started in {cityName}</h2>
           <p style={{ fontSize: '1.25rem', opacity: 0.9, marginBottom: '3rem', maxWidth: '700px', margin: '0 auto' }}>
             Join the thousands of happy customers in {cityName} who rely on My Sahayaq for their daily needs.

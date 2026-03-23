@@ -23,7 +23,7 @@ const About = () => {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem' }}>
           <div className="glass" style={{ padding: '2rem', borderRadius: 'var(--radius-lg)' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '1rem' }}>Integrity First</h3>
             <p style={{ color: 'var(--text-muted)' }}>We maintain the highest standards of verification. Every provider is a partner we trust with our own homes.</p>
