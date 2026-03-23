@@ -26,7 +26,7 @@ const PlayStoreModal: React.FC<PlayStoreModalProps> = ({ isOpen, onClose }) => {
           width: '200%'
         }}>
           {/* Slide 1: User App */}
-          <div style={{ width: '50%', padding: '2.5rem', flexShrink: 0 }}>
+          <div style={{ width: '50%', padding: '1.5rem', flexShrink: 0 }}>
             <div style={{ 
               width: '80px', height: '80px', backgroundColor: 'var(--primary-light)', 
               borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', 
@@ -35,11 +35,11 @@ const PlayStoreModal: React.FC<PlayStoreModalProps> = ({ isOpen, onClose }) => {
               <img src={appLogo} alt="My Sahayaq App Logo" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
             </div>
             
-            <h2 style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.75rem', textAlign: 'center' }}>
               Get the My Sahayaq App
             </h2>
             
-            <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6', textAlign: 'center' }}>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.5', textAlign: 'center', fontSize: '0.875rem' }}>
               For the best experience and to book services instantly, download our app from the Google Play Store.
             </p>
             
@@ -56,7 +56,7 @@ const PlayStoreModal: React.FC<PlayStoreModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           {/* Slide 2: Provider App */}
-          <div style={{ width: '50%', padding: '2.5rem', flexShrink: 0 }}>
+          <div style={{ width: '50%', padding: '1.5rem', flexShrink: 0 }}>
             <div style={{ 
               width: '80px', height: '80px', backgroundColor: '#e0f2fe', 
               borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', 
@@ -65,11 +65,11 @@ const PlayStoreModal: React.FC<PlayStoreModalProps> = ({ isOpen, onClose }) => {
               <img src={appLogo} alt="My Sahayaq Provider App Logo" style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
             </div>
             
-            <h2 style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '1rem', textAlign: 'center' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '0.75rem', textAlign: 'center' }}>
               My Sahayaq Providers
             </h2>
             
-            <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6', textAlign: 'center' }}>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.5', textAlign: 'center', fontSize: '0.875rem' }}>
               Join our network of verified professionals. Download the provider app to start getting leads and grow your business.
             </p>
             

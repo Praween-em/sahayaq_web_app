@@ -1,28 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MessageSquare, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Mail, Phone, MessageSquare, Instagram, Twitter, Linkedin } from 'lucide-react';
 import logo from '../assets/logos/Sayayaq2.png';
 import PlayStoreModal from './PlayStoreModal';
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    // Open on first load after a short delay
-    const initialTimer = setTimeout(() => {
-      setIsModalOpen(true);
-    }, 2000);
-
-    // Open every 1 minute
-    const intervalTimer = setInterval(() => {
-      setIsModalOpen(true);
-    }, 60000);
-
-    return () => {
-      clearTimeout(initialTimer);
-      clearInterval(intervalTimer);
-    };
-  }, []);
+  // PlayStoreModal only opens on explicit user action now, removing the invasive auto-popup
 
   return (
     <footer className="footer">
@@ -37,9 +22,9 @@ const Footer = () => {
               Empowering India's service sector by connecting verified professionals with customers through cutting-edge technology and trust.
             </p>
             <div style={{ display: 'flex', gap: '1rem' }}>
-              <a href="#" className="glass" style={{ width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)' }}><Facebook size={18} /></a>
-              <a href="#" className="glass" style={{ width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)' }}><Twitter size={18} /></a>
-              <a href="#" className="glass" style={{ width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)' }}><Instagram size={18} /></a>
+              <a href="https://x.com/MYSahayaq" target="_blank" rel="noopener noreferrer" className="glass" style={{ width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)' }}><Twitter size={18} /></a>
+              <a href="https://www.instagram.com/mysahayaq/?hl=en" target="_blank" rel="noopener noreferrer" className="glass" style={{ width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)' }}><Instagram size={18} /></a>
+              <a href="https://www.linkedin.com/in/my-sahayaq-2b95913b9/" target="_blank" rel="noopener noreferrer" className="glass" style={{ width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)' }}><Linkedin size={18} /></a>
             </div>
           </div>
           <div>
