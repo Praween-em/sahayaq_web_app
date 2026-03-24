@@ -18,18 +18,19 @@ const Navbar = () => {
         <Link to="/" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)' }}>
           <img src={logo} alt="Sahayaq Logo" style={{ height: '50px', objectFit: 'contain' }} />
           <span style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-heading)' }}>
-            My Sahayaq <span style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-muted)' }}>(My Sahayak)</span>
+            My Sahayaq <span style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-muted)' }}></span>
           </span>
         </Link>
-        
+
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-active' : ''}`}>
           <Link to="/" onClick={closeMenu} className={`nav-link ${isActive('/') ? 'active' : ''}`}>Home</Link>
+          <Link to="/my-sahayak-app" onClick={closeMenu} className={`nav-link ${isActive('/my-sahayak-app') ? 'active' : ''}`}>App</Link>
           <Link to="/about" onClick={closeMenu} className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
           <Link to="/contact" onClick={closeMenu} className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
           <Link to="/terms" onClick={closeMenu} className={`nav-link ${isActive('/terms') ? 'active' : ''}`}>Terms</Link>
           <Link to="/privacy" onClick={closeMenu} className={`nav-link ${isActive('/privacy') ? 'active' : ''}`}>Privacy</Link>
         </div>
-        
+
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <a href="https://play.google.com/store/apps/details?id=com.sahayaq" className="btn btn-primary" style={{ padding: '0.6rem 1.5rem', fontSize: '0.9rem' }}>Download App</a>
           <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle menu">

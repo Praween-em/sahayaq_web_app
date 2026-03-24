@@ -32,6 +32,7 @@ const Footer = () => {
           <div>
             <h4 className="footer-title">Platform</h4>
             <Link to="/" className="footer-link">Home</Link>
+            <Link to="/my-sahayak-app" className="footer-link">My Sahayak App</Link>
             <Link to="/about" className="footer-link">Our Story</Link>
             <Link to="/contact" className="footer-link">Support</Link>
             <button onClick={() => setIsModalOpen(true)} className="footer-link" style={{ textAlign: 'left', width: '100%' }}>Download App</button>
