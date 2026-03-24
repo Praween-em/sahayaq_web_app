@@ -63,7 +63,7 @@ const AppPage = () => {
             <Smartphone size={16} fill="var(--primary-dark)" />
             <span>The Digital Sahayak Revolution</span>
           </div>
-          <h1 className="hero-title" style={{ fontSize: '3.5rem', marginBottom: '1.5rem' }}>One App for Every <br />Essential Service</h1>
+          <h1 className="hero-title" style={{ fontSize: '3.5rem', marginBottom: '1.5rem' }}>My Sahayak App: <br />One App for Every Essential Service</h1>
           <p className="hero-subtitle" style={{ maxWidth: '800px', margin: '0 auto 3rem' }}>
             Experience the future of home services with My Sahayaq. Our app brings trust, speed, and quality to your doorstep with Aadhaar-verified professionals.
           </p>

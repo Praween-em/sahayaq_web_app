@@ -46,7 +46,7 @@ const Home = () => {
             <Star size={16} fill="var(--primary-dark)" />
             <span>India's Most Trusted Digital Sahayak Network</span>
           </div>
-          <h1 className="hero-title">Your Trusted Digital Sahayak<br />for Expert Services</h1>
+          <h1 className="hero-title">My Sahayak: Your Trusted Digital Sahayak for Expert Services</h1>
           <p className="hero-subtitle">
             Experience the revolution in Indian service delivery. My Sahayaq (My Sahayak) connects you with top-tier, Aadhaar-verified professionals across 50+ categories with just a few taps.
           </p>
