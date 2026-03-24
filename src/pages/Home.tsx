@@ -36,19 +36,19 @@ const Home = () => {
   return (
     <div>
       <SEO
-        title="My Sahayaq - Expert Home & Business Services"
-        description="Connect with verified home and business service professionals in India. My Sahayaq (also known as My Sahayak) offers reliable services with Aadhaar-verified pros."
-        keywords={['My Sahayak', 'My Sahayaq', 'Sahayak', 'Sahayaq', 'Home Services', 'Expert Services']}
+        title="My Sahayaq - India's Trusted Digital Sahayak for Expert Services"
+        description="Connect with verified home and business service professionals in India. My Sahayaq (Digital Sahayak) offers reliable sahayak services with Aadhaar-verified pros."
+        keywords={['My Sahayak', 'My Sahayaq', 'Digital Sahayak', 'Online Sahayak', 'Sahayak Services', 'Sahayak App', 'Government Sahayak', 'India Sahayak Platform']}
       />
       <section className="hero">
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', backgroundColor: 'var(--primary-light)', padding: '0.5rem 1.25rem', borderRadius: 'var(--radius-full)', color: 'var(--primary-dark)', fontWeight: 700, fontSize: '0.875rem', marginBottom: '2rem', boxShadow: 'var(--shadow-sm)' }}>
             <Star size={16} fill="var(--primary-dark)" />
-            <span>India's Most Trusted Service Network</span>
+            <span>India's Most Trusted Digital Sahayak Network</span>
           </div>
-          <h1 className="hero-title">Your Gateway to<br />Expert Services</h1>
+          <h1 className="hero-title">Your Trusted Digital Sahayak<br />for Expert Services</h1>
           <p className="hero-subtitle">
-            Experience a new era of home and business services. My Sahayaq (also searched as My Sahayak) connects you with top-tier, verified professionals across 50+ categories with just a few taps.
+            Experience the revolution in Indian service delivery. My Sahayaq (My Sahayak) connects you with top-tier, Aadhaar-verified professionals across 50+ categories with just a few taps.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="https://play.google.com/store/apps/details?id=com.sahayaq" className="btn btn-primary">
@@ -67,7 +67,7 @@ const Home = () => {
       {/* Categories Section */}
       <section className="section-padding">
         <div className="container">
-          <h2 className="section-title">Popular Categories</h2>
+          <h2 className="section-title">Why Choose MySahayaq for Home Services?</h2>
           <p className="section-subtitle">Discover our wide range of professional services tailored for your unique needs.</p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '2rem' }}>
@@ -112,7 +112,7 @@ const Home = () => {
         <div className="container">
           <div className="grid-responsive-2">
             <div>
-              <h2 style={{ fontSize: '2.75rem', fontWeight: 800, marginBottom: '2rem', lineHeight: '1.2' }}>Why Businesses & Households Trust My Sahayaq</h2>
+              <h2 style={{ fontSize: '2.75rem', fontWeight: 800, marginBottom: '2rem', lineHeight: '1.2' }}>Verified Sahayak Professionals Across India</h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                 <div style={{ display: 'flex', gap: '1rem' }}>
                   <div style={{ flexShrink: 0, width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--primary-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)' }}>
@@ -149,7 +149,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="section-padding container">
         <div className="glass padding-responsive-large" style={{ background: 'linear-gradient(135deg, #078c34 0%, #4461e5 100%)', borderRadius: 'var(--radius-2xl)', textAlign: 'center', color: 'var(--white)' }}>
-          <h2 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1.5rem' }}>Experience the Difference Today</h2>
+          <h2 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1.5rem' }}>Download the My Sahayak App Today</h2>
           <p style={{ fontSize: '1.25rem', opacity: 0.9, marginBottom: '3rem', maxWidth: '700px', margin: '0 auto 3rem' }}>
             Download the My Sahayaq app and join the revolution in service delivery. Available now on Google Play Store.
           </p>

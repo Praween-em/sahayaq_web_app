@@ -10,15 +10,15 @@ interface SEOProps {
 
 export default function SEO({ title, description, name = "My Sahayaq", type = "website", keywords }: SEOProps) {
   const currentUrl = window.location.href;
-  // Canonical should always point to the primary domain mysahayak.online
-  const canonicalUrl = currentUrl.replace(/sahayaq\.in|mysahayaq\.in/g, 'mysahayak.online');
+  // Canonical should always point to the primary domain mysahayaq.in
+  const canonicalUrl = currentUrl.replace(/sahayaq\.in|mysahayak\.online/g, 'mysahayaq.in');
 
   return (
     <Helmet>
       {/* Standard metadata tags */}
       <title>{title}</title>
       <meta name='description' content={description} />
-      <meta name="keywords" content={[...(keywords || []), 'My Sahayak', 'My Sahayaq', 'Sahayak', 'Sahayaq'].filter((v, i, a) => a.indexOf(v) === i).join(', ')} />
+      <meta name="keywords" content={[...(keywords || []), 'My Sahayaq', 'My Sahayak', 'digital sahayak', 'online sahayak', 'sahayak', 'india sahayak platform', 'digital assistant india', 'citizen services portal india'].filter((v, i, a) => a.indexOf(v) === i).join(', ')} />
       <link rel="canonical" href={canonicalUrl} />
       
       {/* OpenGraph tags */}
