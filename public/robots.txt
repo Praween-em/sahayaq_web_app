@@ -21,3 +21,4 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://mysahayaq.in/sitemap.xml
+Sitemap: https://mysahayak.online/sitemap.xml
