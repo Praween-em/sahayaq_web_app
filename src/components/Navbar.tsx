@@ -17,7 +17,9 @@ const Navbar = () => {
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
         <Link to="/" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)' }}>
           <img src={logo} alt="Sahayaq Logo" style={{ height: '50px', objectFit: 'contain' }} />
-          <span style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-heading)' }}>My Sahayaq</span>
+          <span style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--text-main)', fontFamily: 'var(--font-heading)' }}>
+            My Sahayaq <span style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-muted)' }}>(My Sahayak)</span>
+          </span>
         </Link>
         
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-active' : ''}`}>

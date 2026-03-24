@@ -16,10 +16,12 @@ const Footer = () => {
           <div>
             <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)', marginBottom: '1.5rem' }}>
               <img src={logo} alt="Sahayaq Logo" style={{ height: '40px', objectFit: 'contain', filter: 'brightness(0) invert(1)' }} />
-              <span style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--white)', fontFamily: 'var(--font-heading)' }}>My Sahayaq</span>
+              <span style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--white)', fontFamily: 'var(--font-heading)' }}>
+                My Sahayaq <span style={{ fontSize: '0.85rem', fontWeight: 500, color: '#94a3b8' }}>(My Sahayak)</span>
+              </span>
             </Link>
             <p style={{ color: '#94a3b8', fontSize: '0.9375rem', lineHeight: '1.7', marginBottom: '2rem' }}>
-              Empowering India's service sector by connecting verified professionals with customers through cutting-edge technology and trust.
+              Empowering India's service sector. My Sahayaq (also known as My Sahayak) connects verified professionals with customers through cutting-edge technology and trust.
             </p>
             <div style={{ display: 'flex', gap: '1rem' }}>
               <a href="https://x.com/MYSahayaq" target="_blank" rel="noopener noreferrer" className="glass" style={{ width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--white)' }}><Twitter size={18} /></a>
